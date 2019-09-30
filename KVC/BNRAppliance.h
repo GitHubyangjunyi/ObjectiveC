@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 {
     NSString *_productName;
 }
-//@property (nonatomic, copy) NSString *productName;
+//@property (nonatomic, copy) NSString *productName;        //为了证明KVC能够在没有存取方法的情况下直接存取实例变量,所以注释掉这个属性声明
 @property (nonatomic) int voltage;
 
 -(instancetype) initWithProductName:(NSString *)name;

@@ -24,9 +24,8 @@ int main(int argc, const char * argv[]) {
         NSLog(@"Worked for %.2f years", [mikey yearsOfEmployment]);
         
         
-        //测试覆盖ddescription
         NSDate *date = mikey.hireDate;
-        NSLog(@"%@ hired on %@", mikey, date);
+        NSLog(@"%@ hired on %@", mikey, date);      //测试覆盖ddescription
         
         
         

@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, copy) NSString *label;
 @property (nonatomic) unsigned int resaleValue;
-@property (nonatomic, weak) BNREmployee *holder;//添加物品所有者并改为弱引用
+@property (nonatomic, weak) BNREmployee *holder;        //添加物品所有者并改为弱引用
 
 @end
 
@@ -28,11 +28,10 @@ NS_ASSUME_NONNULL_END
 //1.显式地设置两个对象间的双向关系
 //[vicePresident addAssetsObject:car];
 //[car setHolder:vicePresident];
-//2.在为子对象设置父对象的指针时将子对象加入父对象的collection对象中
+//2.在为子对象设置父对象的指针时将子对象加入父对象的collection对象中(并不常用)
 //-(void)setHolder:(BNREmployee *)e
 //{
 //    holder = e;
 //    [e addAssetsObject:self];
 //}
 //3.在将子对象加入父对象的collection对象时设置指向父对象的指针(这里所采用)
-

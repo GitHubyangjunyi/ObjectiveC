@@ -48,8 +48,11 @@ int main(int argc, const char * argv[]) {
         
         NSLog(@"Giving up ownership of one employee");
         [employees removeObjectAtIndex:5];
-        //当程序将索引为5的BNREmployee对象移除数组时会因为该对象不再有拥有方而将其释放,其包含的所有BNRAsset对象也会因为没有拥有方而被释放
-        //虽然没有相应的日志输出,但是可以确定被释放的BNRAsset对象的label属性(NSString实例)也会被释放
+        
+        
+        NSLog(@"%lu", (unsigned long)[employees count]);
+        NSLog(@"Employees: %@", employees[5]);
+        NSLog(@"Employees: %@", employees);
         
         NSLog(@"Giving up ownership of arrays");
         employees = nil;
@@ -59,8 +62,9 @@ int main(int argc, const char * argv[]) {
         //这是因为BNRAsset对象拥有BNREmployee对象,BNREmployee对象拥有包含BNRAsset对象的数组对象,该数组对象又拥有BNRAsset对象
         //这种互相拥有的所有权关系导致相关的对象都无法释放的情况称为强引用循环,这是导致内存泄漏的常见原因
         //通过苹果公司提供的性能分析工具Instruments可以找出程序中的强引用循环
+        //Product-Profile-Leaks-Allocations(显示柱状图)
         //点击Leaks并在下拉列表选择Cycles& Roots检查强引用循环
     }
-    sleep(100);
+    sleep(100);//延长程序运行时间进行性能分析
     return 0;
 }

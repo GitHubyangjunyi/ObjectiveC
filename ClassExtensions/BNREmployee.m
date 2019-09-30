@@ -12,7 +12,6 @@
 @interface BNREmployee()
 {
     NSMutableArray *_assets;//移动到类扩展以隐藏可变属性
-    
 }
 
 @property (nonatomic) unsigned int officeAlarmCode;

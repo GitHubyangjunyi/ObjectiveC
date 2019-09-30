@@ -21,8 +21,6 @@ int main(int argc, const char * argv[]) {
         NSLog(@"mikey is %.2f meters tall and weighs %d kilograms", height, weight);
         NSLog(@"mikey has a BMI of %f", [mikey bodyMassIndex]);
         
-        
-        
     }
     return 0;
 }

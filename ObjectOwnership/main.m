@@ -26,15 +26,15 @@ int main(int argc, const char * argv[]) {
         }
         
         //创建10个BNRAsset对象
-        for (int i = 0; i < 10; i++) {
+        for (int i = 1; i < 11; i++) {
             BNRAsset *asset = [[BNRAsset alloc] init];
             
             //为BNRAsset设置合适的标签
             NSString *currentLabel = [NSString stringWithFormat:@"Latop %d", i];
             asset.label = currentLabel;
-            asset.resaleValue = 350 + i * 10;
+            asset.resaleValue = i * 10;
             
-            //生成0到9之间的随机数
+            //生成0到9之间的随机数,包含0和9
             NSUInteger randomIndex = random() % [employees count];
             NSLog(@"randomIndex: %lu", (unsigned long)randomIndex);
             //取出相应的BNREmployee对象
@@ -43,6 +43,7 @@ int main(int argc, const char * argv[]) {
             //将BNRAsset对象赋给该BNREmployee对象
             [randomEmployee addAssets:asset];
         }
+
         
         NSLog(@"Employees: %@", employees);
         

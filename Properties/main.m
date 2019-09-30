@@ -17,11 +17,9 @@ int main(int argc, const char * argv[]) {
         [mikey setHeightInMeters:1.8];
         
         int weight = [mikey weightInKilos];
-        float height = [mikey heightInMeters];
+        float height = mikey.heightInMeters;
         NSLog(@"mikey is %.2f meters tall and weighs %d kilograms", height, weight);
         NSLog(@"mikey has a BMI of %f", [mikey bodyMassIndex]);
-        
-        
         
     }
     return 0;

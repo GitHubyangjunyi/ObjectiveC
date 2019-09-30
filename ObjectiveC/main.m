@@ -12,7 +12,7 @@ int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
         NSDate *now = [NSDate date];
-        //消息发送,NSDate类中有一个date方法,接收方(指针,指向接收消息的对象的地址)是MSDate,选择器是date,date方法执行后NSDate类会在堆上给NSDate实例声明一部分内存,将NSDate实例初始化为当前时间并返回新对象的地址
+        //消息发送,NSDate类中有一个date方法,接收方(指针,指向接收消息的对象的地址)是NSDate,选择器是date,date方法执行后NSDate类会在堆上给NSDate实例声明一部分内存,将NSDate实例初始化为当前时间并返回新对象的地址
         NSLog(@"This NSDate object lives at %p", now);
         NSLog(@"This date is %@", now);
         
@@ -31,8 +31,8 @@ int main(int argc, const char * argv[]) {
         NSCalendar *cal = [NSCalendar currentCalendar];
         NSLog(@"My calendar is %@", [cal calendarIdentifier]);//使用格里高利历法,也就是公历
 //        unsigned long day = [cal ordinalityOfUnit:<#(NSCalendarUnit)#> inUnit:<#(NSCalendarUnit)#> forDate:<#(nonnull NSDate *)#>];
-        unsigned long day = [cal ordinalityOfUnit:NSDayCalendarUnit
-                                           inUnit:NSMonthCalendarUnit
+        unsigned long day = [cal ordinalityOfUnit:NSCalendarUnitDay
+                                           inUnit:NSCalendarUnitMonth
                                           forDate:now];//计算now变量指向的NSDate实例的日期是相应月份中的第几日
         NSLog(@"This is day %lu of the month", day);
         
@@ -45,11 +45,11 @@ int main(int argc, const char * argv[]) {
         [comps setMinute: 2];
         [comps setSecond: 4];
         
-//        NSCalendar *g = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+//        NSCalendar *g = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
 //        NSDate *dateOfBirth = [g dateFromComponents:comps];
 //
 //        double secondsSinceEarlierDate = [now timeIntervalSinceDate:comps];
-//        NSLog(@"%@", secondsSinceEarlierDate);
+//        NSLog(@"%f", secondsSinceEarlierDate);
         
     }
     return 0;

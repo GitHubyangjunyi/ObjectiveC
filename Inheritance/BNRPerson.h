@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface BNRPerson : NSObject
 
-@property (nonatomic) float heightInMeters;//默认是原子性,所以要显式声明非原子性
+@property (nonatomic) float heightInMeters;     //默认是原子性,所以要显式声明非原子性
 @property (nonatomic) int weightInKilos;
 
 - (float)bodyMassIndex;

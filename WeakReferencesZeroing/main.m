@@ -55,9 +55,9 @@ int main(int argc, const char * argv[]) {
         }
         
         //这里插入数组排序
-        NSSortDescriptor *voa = [NSSortDescriptor sortDescriptorWithKey:@"valueOfAssets" ascending:YES];//创建第一排序对象
-        NSSortDescriptor *eid = [NSSortDescriptor sortDescriptorWithKey:@"employeeID" ascending:YES];//创建第二排序对象
-        [employees sortUsingDescriptors:@[voa, eid]];
+//        NSSortDescriptor *voa = [NSSortDescriptor sortDescriptorWithKey:@"valueOfAssets" ascending:YES];//创建第一排序对象
+//        NSSortDescriptor *eid = [NSSortDescriptor sortDescriptorWithKey:@"employeeID" ascending:YES];//创建第二排序对象
+//        [employees sortUsingDescriptors:@[voa, eid]];
         //该方法的实参是一个包含NSSortDescriptor对象的数组对象,排序描述对象包含两个信息,一是数组中对象的属性名,二是根据该属性选择升序还是降序
         
         
@@ -71,14 +71,11 @@ int main(int argc, const char * argv[]) {
         
         NSLog(@"Giving up ownership of one employee");
         [employees removeObjectAtIndex:5];
-        //当程序将索引为5的BNREmployee对象移除数组时会因为该对象不再有拥有方而将其释放,其包含的所有BNRAsset对象也会因为没有拥有方而被释放
-        //虽然没有相应的日志输出,但是可以确定被释放的BNRAsset对象的label属性(NSString实例)也会被释放
         
         
         //
         NSLog(@"allAssets: %@", allAssets);
         //
-        
         
         
         NSLog(@"Giving up ownership of arrays");
@@ -88,24 +85,10 @@ int main(int argc, const char * argv[]) {
         //
         
         employees = nil;
-        //引发一连串释放动作
-        //但是凡是拥有BNRAsset对象的BNREmployee对象都没有被释放
-        //所有BNRAsset对象也没有被释放
-        //这是因为BNRAsset对象拥有BNREmployee对象,BNREmployee对象拥有包含BNRAsset对象的数组对象,该数组对象又拥有BNRAsset对象
-        //这种互相拥有的所有权关系导致相关的对象都无法释放的情况称为强引用循环,这是导致内存泄漏的常见原因
-        //通过苹果公司提供的性能分析工具Instruments可以找出程序中的强引用循环
-        //点击Leaks并在下拉列表选择Cycles& Roots检查强引用循环
-        
-        
     }
     return 0;
 }
 
-//通过弱引用解决强引用循环问题
-//弱引用是不说明所有权的指针,要解决MemoryLeaks项目中的问题就不能让BNRAsset对象拥有它的holder,也就是BNREmployee对象
-//编辑BNRAsset.h将holder改成弱引用
-//所有对象应该能被正确释放了
-//
 //如果对象间是父子关系,那么为了避免强引用循环通常需要遵守此规则:
 //父对象拥有子对象,但是子对象不拥有父对象
 //
@@ -114,7 +97,7 @@ int main(int argc, const char * argv[]) {
 //
 //程序运行结果
 //当索引为5的BNREmployee对象被释放时,控制台会输出allAssets的全部内容
-//这些BNRAsset独享虽然会失去一个拥有方BNREmployee 5#,但是还会有另一个拥有方allAssets,所以不会被释放
+//这些BNRAsset对象虽然会失去一个拥有方BNREmployee 5#,但是还会有另一个拥有方allAssets,所以不会被释放
 //但是这些对象的holder实例变量被置为nil,因为当某个由弱引用指向的对象被释放时,相应的指针归为nil
 //总结就是强引用会保留对象的拥有方,使其不被释放
 //弱引用则不会保留,因此标为弱引用的实例变量与属性指向的对象可能会消失
@@ -123,29 +106,31 @@ int main(int argc, const char * argv[]) {
 //如果需要明确地将指针变量声明为弱引用,可以标注__weak
 __weak BNRPerson *parent;
 //
+//
 //深入学习手动引用计数与ARC历史/Retain计数规则
+//
 //在Objective-C加入ARC之前程序员必须手动引用计数维护retain计数
 //使用手动引用计数时,只有当程序员显式地向对象发送能够增加或者减少retain计数的消息时,相应对象的所有权才会发生变化
-//[object release]  //object失去一个拥有方
-//[object retain]   //object得到一个拥有方
+//  [object release]  //object失去一个拥有方
+//  [object retain]   //object得到一个拥有方
 //这段代码所使用的release方法和ratain方法通常会在存取方法和dealloc方法中使用
 //  在存方法中程序应该保留新值释放旧值
 //  在dealloc方法中程序应该释放所有之前保留过的对象
 //使用手动引用计数改写BNRAsset类的setHolder:方法
 //-(void)setHolder:(BNREmployee *)newEmployee
 //{
-//    //获取新holder的拥有权
+//                          //获取新holder的拥有权
 //    [newEmployee retain];
-//    //释放旧holder的拥有权
+//                          //释放旧holder的拥有权
 //    [holder release];
-//    //让指针指向新的holder
+//                          //让指针指向新的holder
 //    holder = newEmployee;
 //}
 //
 //改写dealloc法方法
 //-(void)dealloc
 //{
-//    //放弃曾经拥有的所有对象的拥有权
+//                      //放弃曾经拥有的所有对象的拥有权
 //    [label release];
 //    [holder release];
 //    [super release];
@@ -155,7 +140,6 @@ __weak BNRPerson *parent;
 //
 //-(NSString *)description
 //{
-//    //return [NSString stringWithFormat:@"<%@: $%u>", self.label, self.resaleValue];
 //    if (self.holder) {
 //        return [NSString stringWithFormat:@"<%@: $%d, assigned to %@>", self.label, self.resaleValue, self.holder];
 //    } else {
@@ -175,22 +159,22 @@ __weak BNRPerson *parent;
 //
 //description方法所返回的NSString对象会在什么时候收到release消息?答案是当autorelease池(对象)被排干的时候,代码如下
 //创建autorelease池
-//NSAutoreleasePool *arp = [[NSAutoreleasePool alloc] init];
-//BNRAsset *asset = [[BNRAsset alloc] init];
-//NSString *s = [asset description];
-//s指向的NSString对象已经在autorelease池中
-//NSLog(@"The asset is %@", s);
+//  NSAutoreleasePool *arp = [[NSAutoreleasePool alloc] init];
+//  BNRAsset *asset = [[BNRAsset alloc] init];
+//  NSString *s = [asset description];
+//      s指向的NSString对象已经在autorelease池中
+//  NSLog(@"The asset is %@", s);
 //
-//[arp drain];//description方法所返回的NSString对象会收到release消息
+//  [arp drain];//description方法所返回的NSString对象会收到release消息
 //
 //
 //虽然ARC会自动使用autorelease池,但是必须有程序创建并排空相应的autorelease池
 //Objective-C加入ARC时也加入了用于创建autorelease池的新语法,用新语法改写
 //创建autorelease池
 //@autoreleasepool {
-//BNRAsset *asset = [[BNRAsset alloc] init];
-//NSString *s = [asset description];
-//s指向的NSString对象已经在autorelease池中
+//  BNRAsset *asset = [[BNRAsset alloc] init];
+//  NSString *s = [asset description];
+//      s指向的NSString对象已经在autorelease池中
 //}//autorelease池已经被排空
 //
 //

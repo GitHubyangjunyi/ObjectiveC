@@ -29,24 +29,44 @@ int main(int argc, const char * argv[]) {
 
 //项目索引
 //000//AAAAReadMe
-//002//AllocInit            对象创建与初始化
-//018//Appliances           对象初始化过程
-//017//BlockSelf            在Block中使用self
-//014//CallBacks            回调
+//002//AllocInit            对象创建与初始化与id类型
+//014//Appliances           对象初始化过程
+//015//AppliancesX          继承关系间对象初始化过程
+//Blocks        Block对象
+    //034//BlockAnonymous   匿名Block对象
+    //032//BlockNotifications   使用Block对象订阅通知
+    //033//BlockReturnValue Block对象的返回值
+    //035//BlockSelf        在Block中避免强引用循环/在Block对象中无意捕获self/修改外部变量
+    //031//VoweIMovement    Block对象
+//028//Categories           范畴 为任何已有的类添加方法
 //003//ClassDefine          自定义类
-//008//ClassExtensions      类扩展/隐藏可变属性/头文件与继承/头文件与生成的实例变量
-//013//FileOperations       文件操作/UTF编码问题/特别目录
-//015//HelperObjects        辅助对象/通知/回调与对象所有权/选择器工作机制
+//008//ClassExtensions      类扩展/或者称为匿名范畴/隐藏可变属性/头文件与继承/头文件与生成的实例变量
+//Collection    集合类型
+    //1//AtIndex            测试插入和删除行为
+    //2//PropertyList       属性列表/XML
+//000//CopyMutableCopy      拷贝的可变性以及Block对象的copy修饰 (还有很多问题待解释)
+//013//CString              C字符串/转换成NSString编码问题
+//EventDriven   事件驱动
+    //029//CallBacks        回调汇总
+    //020//HelperObjects    辅助对象/此时称辅助对象为委托对象,别的场景下称为数据源
+    //024//KVO              键值观察(Cocoa bindings以及Core Data的关键组成部分)/继承关系中的KVO使用context进行验证
+    //026//KVODependentProperties       KVO独立的属性
+    //025//KVOExplicitlyNotification    KVO显式触发通知/willChangeValueForKey/didChangeValueForKey
+    //027//KVORuntime       KVO工作原理
+    //021//Notifications    通知/回调与对象所有权
+    //018//NSRunLoop        运行循环/事件驱动
+    //019//TargetAction     目标-动作对/选择器工作机制/@selector编译指令
+//017//FileOperations       NSString/文件操作错误处理/UTF编码问题/特别目录
+//023//IMP                  类的继承层次/IMP类型 (有错误未修正)
 //005//Inheritance          继承关系
-//006//IsAPointer           isa指针
-//019/KVC                   KVC/KVC路径
-//009//MemoryLeaks          内存泄漏/强引用循环
-//012//NS_ENUM              枚举宏
-//001//ObjectiveC
+//006//IsAPointer           isa指针/选择器的工作机制/@selector编译指令
+//016//KVC                  KVC/Key路径/Core Data的关键
+//009//MemoryLeaks          强引用循环导致的内存泄漏
+//012//NS_ENUM              枚举宏和NSMutableArray
+//001//ObjectiveC           日期与时间
 //007//ObjectOwnership      对象所有权与ARC
 //004//Properties           属性
-//016//VoweIMovement        Block对象
+//030//Protocols            协议
+//022//Runtime              Objective-C运行时/自省/动态查找并执行方法/注册的类数量
 //010//WeakReferences       父子对象之间的弱引用
-//011/WeakReferencesZeroing 弱引用自动置零特性/手动引用计数与ARC历史/Retain计数规则/数组排序
-////
-////
+//011//WeakReferencesZeroing 弱引用自动置零特性/手动引用计数与ARC历史/Retain计数规则/数组排序

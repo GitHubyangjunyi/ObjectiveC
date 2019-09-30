@@ -20,10 +20,14 @@ typedef NS_ENUM(char, Numberx) {
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        
+        printf("%zu\n", sizeof(BNRNum));
+        printf("%zu\n", sizeof(Numberx));
+        
     }
     return 0;
 }
 
+//从OS X10.8和iOS 6开始引入的NS_ENUM()
 //NS_ENUM()实际上是一个宏,带有两个实参,数据类型和名字,其中最重要的优点是可以声明数据类型节约空间
+//如果使用旧语法,编译器通常选择int类型

@@ -10,10 +10,6 @@
 
 @implementation BNRAppliance
 
-- (instancetype)init{
-    return [self initWithProductName:@"UnknownName"];//覆盖父类的init方法并用定向至initWithProductName:方法以避免使用旧init方法是导致的问题
-}
-
 -(instancetype) initWithProductName:(NSString *)name{
     if (self = [super init]) {
         _productName = [name copy];
@@ -22,13 +18,17 @@
     return self;
 }
 
+- (instancetype)init{
+    return [self initWithProductName:@"UnknownName"];
+}
+
 -(NSString *)description{
     return [NSString stringWithFormat:@"<%@: %d volts>", _productName, self.voltage];
 }
 
--(void)setVoltage:(int)x{
-    NSLog(@"setting voltage to %d", x);
-    _voltage = x;
+-(void)setVoltage:(int)value{
+    NSLog(@"setting voltage to %d", value);
+    _voltage = value;
 }
 
 @end
