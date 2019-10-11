@@ -7,13 +7,26 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <objc/message.h>
+#import <objc/runtime.h>
+
+extern void _objc_autoreleasePoolPrint(void);
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
         
+        id __strong obj = [[NSObject alloc] init];
         
+        _objc_autoreleasePoolPrint();
         
+        id __weak o = obj;
+        NSLog(@"Before using __weak: retain count = %d", _objc_rootRetainCount(obj));
+        NSLog(@"class = %@", [o class]);
+        
+        NSLog(@"After using __weak: retain count = %d", _objc_rootRetainCount(obj));
+        
+        _objc_autoreleasePoolPrint();
         
         
     }
@@ -33,11 +46,18 @@ int main(int argc, const char * argv[]) {
 //014//Appliances           对象初始化过程
 //015//AppliancesX          继承关系间对象初始化过程
 //Blocks        Block对象
-    //034//BlockAnonymous   匿名Block对象
-    //032//BlockNotifications   使用Block对象订阅通知
-    //033//BlockReturnValue Block对象的返回值
-    //035//BlockSelf        在Block中避免强引用循环/在Block对象中无意捕获self/修改外部变量
-    //031//VoweIMovement    Block对象
+    //000//BlockAnonymous                   匿名Block对象
+    //003//BlockCapture                     捕获自动变量值瞬时值
+    //004//BlockImplement                   Block是如何实现的
+    //007//BlockImplementBlock              Block是如何实现的/__block
+    //008//BlockImplementBlockForwarding    __block变量结构体实例的__forwarding指针的作用
+    //006//BlockImplementBlockPre           Block是如何实现的/__block
+    //005//BlockImplementStatic             Block是如何实现的/改写静态变量
+    //000//BlockNotifications               使用Block对象订阅通知
+    //002//BlockReturnValue                 Block对象的返回值
+    //009//BlockSelf                        在Block中避免强引用循环/在Block对象中无意捕获self/修改外部变量
+    //001//BlockTypedef                     Block语法
+    //031//VoweIMovement                    Block对象
 //028//Categories           范畴 为任何已有的类添加方法
 //003//ClassDefine          自定义类
 //008//ClassExtensions      类扩展/或者称为匿名范畴/隐藏可变属性/头文件与继承/头文件与生成的实例变量

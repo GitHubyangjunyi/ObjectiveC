@@ -7,9 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C15E84A234F545100FF3E00 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C15E849234F545100FF3E00 /* main.m */; };
+		1C3386B4234F27B900CC0EF3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3386B3234F27B900CC0EF3 /* main.m */; };
+		1C33896F234DFDF100D54AE7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C33896E234DFDF100D54AE7 /* main.m */; };
+		1C33897A234E02D900D54AE7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C338979234E02D900D54AE7 /* main.m */; };
+		1C338985234E03B600D54AE7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C338984234E03B600D54AE7 /* main.m */; };
 		1C35905B2342052100673F4D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C35905A2342052100673F4D /* main.m */; };
 		1C3590662342074400673F4D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3590652342074400673F4D /* main.m */; };
 		1C3590722342099F00673F4D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3590712342099F00673F4D /* main.m */; };
+		1C3DD6A8234ECAB3005F907B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3DD6A7234ECAB3005F907B /* main.m */; };
+		1C3DD6B3234ED3F3005F907B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3DD6B2234ED3F3005F907B /* main.m */; };
 		1C80AD6A233F9E4D0053C1AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C80AD69233F9E4D0053C1AD /* main.m */; };
 		1C80AD75233FA7110053C1AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C80AD74233FA7110053C1AD /* main.m */; };
 		1C80AD80233FAACD0053C1AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C80AD7F233FAACD0053C1AD /* main.m */; };
@@ -86,6 +93,51 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		1C15E845234F545000FF3E00 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		1C3386AF234F27B900CC0EF3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		1C33896A234DFDF100D54AE7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		1C338975234E02D900D54AE7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		1C338980234E03B600D54AE7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		1C3590562342052100673F4D /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -105,6 +157,24 @@
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 		1C35906D2342099F00673F4D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		1C3DD6A3234ECAB3005F907B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		1C3DD6AE234ED3F3005F907B /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -440,12 +510,26 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1C15E847234F545100FF3E00 /* BlockImplementBlockForwarding */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BlockImplementBlockForwarding; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C15E849234F545100FF3E00 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1C3386B1234F27B900CC0EF3 /* BlockImplementBlockPre */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BlockImplementBlockPre; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C3386B3234F27B900CC0EF3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1C33896C234DFDF100D54AE7 /* BlockCapture */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BlockCapture; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C33896E234DFDF100D54AE7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1C338977234E02D900D54AE7 /* BlockTypedef */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BlockTypedef; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C338979234E02D900D54AE7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1C338982234E03B600D54AE7 /* BlockImplement */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BlockImplement; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C338984234E03B600D54AE7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1C3590582342052100673F4D /* BlockNotifications */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BlockNotifications; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C35905A2342052100673F4D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1C3590632342074400673F4D /* BlockReturnValue */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BlockReturnValue; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C3590652342074400673F4D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1C35906F2342099F00673F4D /* BlockAnonymous */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BlockAnonymous; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C3590712342099F00673F4D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1C3DD6A5234ECAB3005F907B /* BlockImplementStatic */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BlockImplementStatic; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C3DD6A7234ECAB3005F907B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1C3DD6B0234ED3F3005F907B /* BlockImplementBlock */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BlockImplementBlock; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C3DD6B2234ED3F3005F907B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1C80AD67233F9E4D0053C1AD /* CString */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CString; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C80AD69233F9E4D0053C1AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1C80AD72233FA7110053C1AD /* AtIndex */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AtIndex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -595,6 +679,41 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1C15E844234F545000FF3E00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C3386AE234F27B900CC0EF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C338969234DFDF100D54AE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C338974234E02D900D54AE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C33897F234E03B600D54AE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1C3590552342052100673F4D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -610,6 +729,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		1C35906C2342099F00673F4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C3DD6A2234ECAB3005F907B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C3DD6AD234ED3F3005F907B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -871,6 +1004,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C15E848234F545100FF3E00 /* BlockImplementBlockForwarding */ = {
+			isa = PBXGroup;
+			children = (
+				1C15E849234F545100FF3E00 /* main.m */,
+			);
+			path = BlockImplementBlockForwarding;
+			sourceTree = "<group>";
+		};
+		1C3386B2234F27B900CC0EF3 /* BlockImplementBlockPre */ = {
+			isa = PBXGroup;
+			children = (
+				1C3386B3234F27B900CC0EF3 /* main.m */,
+			);
+			path = BlockImplementBlockPre;
+			sourceTree = "<group>";
+		};
+		1C33896D234DFDF100D54AE7 /* BlockCapture */ = {
+			isa = PBXGroup;
+			children = (
+				1C33896E234DFDF100D54AE7 /* main.m */,
+			);
+			path = BlockCapture;
+			sourceTree = "<group>";
+		};
+		1C338978234E02D900D54AE7 /* BlockTypedef */ = {
+			isa = PBXGroup;
+			children = (
+				1C338979234E02D900D54AE7 /* main.m */,
+			);
+			path = BlockTypedef;
+			sourceTree = "<group>";
+		};
+		1C338983234E03B600D54AE7 /* BlockImplement */ = {
+			isa = PBXGroup;
+			children = (
+				1C338984234E03B600D54AE7 /* main.m */,
+			);
+			path = BlockImplement;
+			sourceTree = "<group>";
+		};
 		1C3590592342052100673F4D /* BlockNotifications */ = {
 			isa = PBXGroup;
 			children = (
@@ -891,9 +1064,16 @@
 			isa = PBXGroup;
 			children = (
 				1C3590702342099F00673F4D /* BlockAnonymous */,
+				1C33896D234DFDF100D54AE7 /* BlockCapture */,
+				1C338983234E03B600D54AE7 /* BlockImplement */,
+				1C3DD6B1234ED3F3005F907B /* BlockImplementBlock */,
+				1C15E848234F545100FF3E00 /* BlockImplementBlockForwarding */,
+				1C3386B2234F27B900CC0EF3 /* BlockImplementBlockPre */,
+				1C3DD6A6234ECAB3005F907B /* BlockImplementStatic */,
 				1C3590592342052100673F4D /* BlockNotifications */,
 				1C3590642342074400673F4D /* BlockReturnValue */,
 				1CA57F83231FD4C90037385D /* BlockSelf */,
+				1C338978234E02D900D54AE7 /* BlockTypedef */,
 				1C90FCA8231D507900484A81 /* VoweIMovement */,
 			);
 			path = Blocks;
@@ -905,6 +1085,22 @@
 				1C3590712342099F00673F4D /* main.m */,
 			);
 			path = BlockAnonymous;
+			sourceTree = "<group>";
+		};
+		1C3DD6A6234ECAB3005F907B /* BlockImplementStatic */ = {
+			isa = PBXGroup;
+			children = (
+				1C3DD6A7234ECAB3005F907B /* main.m */,
+			);
+			path = BlockImplementStatic;
+			sourceTree = "<group>";
+		};
+		1C3DD6B1234ED3F3005F907B /* BlockImplementBlock */ = {
+			isa = PBXGroup;
+			children = (
+				1C3DD6B2234ED3F3005F907B /* main.m */,
+			);
+			path = BlockImplementBlock;
 			sourceTree = "<group>";
 		};
 		1C80AD62233F9BF90053C1AD /* Collection */ = {
@@ -1259,6 +1455,13 @@
 				1C3590582342052100673F4D /* BlockNotifications */,
 				1C3590632342074400673F4D /* BlockReturnValue */,
 				1C35906F2342099F00673F4D /* BlockAnonymous */,
+				1C33896C234DFDF100D54AE7 /* BlockCapture */,
+				1C338977234E02D900D54AE7 /* BlockTypedef */,
+				1C338982234E03B600D54AE7 /* BlockImplement */,
+				1C3DD6A5234ECAB3005F907B /* BlockImplementStatic */,
+				1C3DD6B0234ED3F3005F907B /* BlockImplementBlock */,
+				1C3386B1234F27B900CC0EF3 /* BlockImplementBlockPre */,
+				1C15E847234F545100FF3E00 /* BlockImplementBlockForwarding */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1376,6 +1579,91 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1C15E846234F545000FF3E00 /* BlockImplementBlockForwarding */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C15E84D234F545100FF3E00 /* Build configuration list for PBXNativeTarget "BlockImplementBlockForwarding" */;
+			buildPhases = (
+				1C15E843234F545000FF3E00 /* Sources */,
+				1C15E844234F545000FF3E00 /* Frameworks */,
+				1C15E845234F545000FF3E00 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlockImplementBlockForwarding;
+			productName = BlockImplementBlockForwarding;
+			productReference = 1C15E847234F545100FF3E00 /* BlockImplementBlockForwarding */;
+			productType = "com.apple.product-type.tool";
+		};
+		1C3386B0234F27B900CC0EF3 /* BlockImplementBlockPre */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C3386B7234F27B900CC0EF3 /* Build configuration list for PBXNativeTarget "BlockImplementBlockPre" */;
+			buildPhases = (
+				1C3386AD234F27B900CC0EF3 /* Sources */,
+				1C3386AE234F27B900CC0EF3 /* Frameworks */,
+				1C3386AF234F27B900CC0EF3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlockImplementBlockPre;
+			productName = BlockImplementBlockPre;
+			productReference = 1C3386B1234F27B900CC0EF3 /* BlockImplementBlockPre */;
+			productType = "com.apple.product-type.tool";
+		};
+		1C33896B234DFDF100D54AE7 /* BlockCapture */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C338970234DFDF100D54AE7 /* Build configuration list for PBXNativeTarget "BlockCapture" */;
+			buildPhases = (
+				1C338968234DFDF100D54AE7 /* Sources */,
+				1C338969234DFDF100D54AE7 /* Frameworks */,
+				1C33896A234DFDF100D54AE7 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlockCapture;
+			productName = BlockCapture;
+			productReference = 1C33896C234DFDF100D54AE7 /* BlockCapture */;
+			productType = "com.apple.product-type.tool";
+		};
+		1C338976234E02D900D54AE7 /* BlockTypedef */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C33897B234E02D900D54AE7 /* Build configuration list for PBXNativeTarget "BlockTypedef" */;
+			buildPhases = (
+				1C338973234E02D900D54AE7 /* Sources */,
+				1C338974234E02D900D54AE7 /* Frameworks */,
+				1C338975234E02D900D54AE7 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlockTypedef;
+			productName = BlockTypedef;
+			productReference = 1C338977234E02D900D54AE7 /* BlockTypedef */;
+			productType = "com.apple.product-type.tool";
+		};
+		1C338981234E03B600D54AE7 /* BlockImplement */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C338986234E03B600D54AE7 /* Build configuration list for PBXNativeTarget "BlockImplement" */;
+			buildPhases = (
+				1C33897E234E03B600D54AE7 /* Sources */,
+				1C33897F234E03B600D54AE7 /* Frameworks */,
+				1C338980234E03B600D54AE7 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlockImplement;
+			productName = BlockImplement;
+			productReference = 1C338982234E03B600D54AE7 /* BlockImplement */;
+			productType = "com.apple.product-type.tool";
+		};
 		1C3590572342052100673F4D /* BlockNotifications */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1C35905E2342052100673F4D /* Build configuration list for PBXNativeTarget "BlockNotifications" */;
@@ -1425,6 +1713,40 @@
 			name = BlockAnonymous;
 			productName = BlockAnonymous;
 			productReference = 1C35906F2342099F00673F4D /* BlockAnonymous */;
+			productType = "com.apple.product-type.tool";
+		};
+		1C3DD6A4234ECAB3005F907B /* BlockImplementStatic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C3DD6AB234ECAB3005F907B /* Build configuration list for PBXNativeTarget "BlockImplementStatic" */;
+			buildPhases = (
+				1C3DD6A1234ECAB3005F907B /* Sources */,
+				1C3DD6A2234ECAB3005F907B /* Frameworks */,
+				1C3DD6A3234ECAB3005F907B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlockImplementStatic;
+			productName = BlockImplementStatic;
+			productReference = 1C3DD6A5234ECAB3005F907B /* BlockImplementStatic */;
+			productType = "com.apple.product-type.tool";
+		};
+		1C3DD6AF234ED3F3005F907B /* BlockImplementBlock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C3DD6B4234ED3F3005F907B /* Build configuration list for PBXNativeTarget "BlockImplementBlock" */;
+			buildPhases = (
+				1C3DD6AC234ED3F3005F907B /* Sources */,
+				1C3DD6AD234ED3F3005F907B /* Frameworks */,
+				1C3DD6AE234ED3F3005F907B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlockImplementBlock;
+			productName = BlockImplementBlock;
+			productReference = 1C3DD6B0234ED3F3005F907B /* BlockImplementBlock */;
 			productType = "com.apple.product-type.tool";
 		};
 		1C80AD66233F9E4D0053C1AD /* CString */ = {
@@ -2045,9 +2367,24 @@
 		1CB0BB1323189C0200FDEE5C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 1110;
 				ORGANIZATIONNAME = "杨俊艺";
 				TargetAttributes = {
+					1C15E846234F545000FF3E00 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					1C3386B0234F27B900CC0EF3 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					1C33896B234DFDF100D54AE7 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					1C338976234E02D900D54AE7 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					1C338981234E03B600D54AE7 = {
+						CreatedOnToolsVersion = 11.1;
+					};
 					1C3590572342052100673F4D = {
 						CreatedOnToolsVersion = 11.0;
 					};
@@ -2056,6 +2393,12 @@
 					};
 					1C35906E2342099F00673F4D = {
 						CreatedOnToolsVersion = 11.0;
+					};
+					1C3DD6A4234ECAB3005F907B = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					1C3DD6AF234ED3F3005F907B = {
+						CreatedOnToolsVersion = 11.1;
 					};
 					1C80AD66233F9E4D0053C1AD = {
 						CreatedOnToolsVersion = 11.0;
@@ -2186,9 +2529,16 @@
 				1C80AD92233FB4BC0053C1AD /* AppliancesX */,
 				1C80AD71233FA7110053C1AD /* AtIndex */,
 				1C35906E2342099F00673F4D /* BlockAnonymous */,
+				1C33896B234DFDF100D54AE7 /* BlockCapture */,
+				1C338981234E03B600D54AE7 /* BlockImplement */,
+				1C3DD6AF234ED3F3005F907B /* BlockImplementBlock */,
+				1C15E846234F545000FF3E00 /* BlockImplementBlockForwarding */,
+				1C3386B0234F27B900CC0EF3 /* BlockImplementBlockPre */,
+				1C3DD6A4234ECAB3005F907B /* BlockImplementStatic */,
 				1C3590572342052100673F4D /* BlockNotifications */,
 				1C3590622342074400673F4D /* BlockReturnValue */,
 				1CA57F81231FD4C90037385D /* BlockSelf */,
+				1C338976234E02D900D54AE7 /* BlockTypedef */,
 				1C90FC8A231D283A00484A81 /* CallBacks */,
 				1C80ADA6233FC0860053C1AD /* Categories */,
 				1C8922BE231BDB3100641B84 /* ClassDefine */,
@@ -2224,6 +2574,46 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1C15E843234F545000FF3E00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C15E84A234F545100FF3E00 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C3386AD234F27B900CC0EF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C3386B4234F27B900CC0EF3 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C338968234DFDF100D54AE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C33896F234DFDF100D54AE7 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C338973234E02D900D54AE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C33897A234E02D900D54AE7 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C33897E234E03B600D54AE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C338985234E03B600D54AE7 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1C3590542342052100673F4D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2245,6 +2635,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C3590722342099F00673F4D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C3DD6A1234ECAB3005F907B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C3DD6A8234ECAB3005F907B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C3DD6AC234ED3F3005F907B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C3DD6B3234ED3F3005F907B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2576,9 +2982,120 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		1C15E84B234F545100FF3E00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PGN5857P43;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1C15E84C234F545100FF3E00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PGN5857P43;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1C3386B5234F27B900CC0EF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PGN5857P43;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1C3386B6234F27B900CC0EF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PGN5857P43;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1C338971234DFDF100D54AE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PGN5857P43;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1C338972234DFDF100D54AE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PGN5857P43;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1C33897C234E02D900D54AE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PGN5857P43;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1C33897D234E02D900D54AE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PGN5857P43;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1C338987234E03B600D54AE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PGN5857P43;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1C338988234E03B600D54AE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PGN5857P43;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		1C35905C2342052100673F4D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PGN5857P43;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -2589,6 +3106,7 @@
 		1C35905D2342052100673F4D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PGN5857P43;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -2599,6 +3117,7 @@
 		1C3590682342074400673F4D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PGN5857P43;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -2609,6 +3128,7 @@
 		1C3590692342074400673F4D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PGN5857P43;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -2619,6 +3139,7 @@
 		1C3590742342099F00673F4D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PGN5857P43;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -2629,6 +3150,7 @@
 		1C3590752342099F00673F4D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PGN5857P43;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -2636,9 +3158,54 @@
 			};
 			name = Release;
 		};
+		1C3DD6A9234ECAB3005F907B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PGN5857P43;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1C3DD6AA234ECAB3005F907B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PGN5857P43;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1C3DD6B5234ED3F3005F907B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PGN5857P43;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1C3DD6B6234ED3F3005F907B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PGN5857P43;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		1C80AD6C233F9E4D0053C1AD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PGN5857P43;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -2649,6 +3216,7 @@
 		1C80AD6D233F9E4D0053C1AD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PGN5857P43;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -2659,6 +3227,7 @@
 		1C80AD77233FA7110053C1AD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PGN5857P43;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -2669,6 +3238,7 @@
 		1C80AD78233FA7110053C1AD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PGN5857P43;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -2679,6 +3249,7 @@
 		1C80AD82233FAACD0053C1AD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PGN5857P43;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -2689,6 +3260,7 @@
 		1C80AD83233FAACD0053C1AD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PGN5857P43;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -2699,6 +3271,7 @@
 		1C80AD8D233FB2F30053C1AD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PGN5857P43;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -2709,6 +3282,7 @@
 		1C80AD8E233FB2F30053C1AD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PGN5857P43;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -2719,6 +3293,7 @@
 		1C80AD98233FB4BC0053C1AD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PGN5857P43;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -2729,6 +3304,7 @@
 		1C80AD99233FB4BC0053C1AD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PGN5857P43;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -2739,6 +3315,7 @@
 		1C80ADAC233FC0860053C1AD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PGN5857P43;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -2749,6 +3326,7 @@
 		1C80ADAD233FC0860053C1AD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PGN5857P43;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -2919,6 +3497,7 @@
 		1C8FF88F233DFB4F00669902 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PGN5857P43;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -2929,6 +3508,7 @@
 		1C8FF890233DFB4F00669902 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PGN5857P43;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -3290,6 +3870,7 @@
 		1CB1AF4A2340A737004DD698 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PGN5857P43;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -3300,6 +3881,7 @@
 		1CB1AF4B2340A737004DD698 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PGN5857P43;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -3310,6 +3892,7 @@
 		1CB1AF562340AA5E004DD698 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PGN5857P43;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -3320,6 +3903,7 @@
 		1CB1AF572340AA5E004DD698 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PGN5857P43;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -3330,6 +3914,7 @@
 		1CB1AF612340AC58004DD698 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PGN5857P43;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -3340,6 +3925,7 @@
 		1CB1AF622340AC58004DD698 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PGN5857P43;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -3350,6 +3936,7 @@
 		1CB1AF6F2340B939004DD698 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PGN5857P43;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -3360,6 +3947,7 @@
 		1CB1AF702340B939004DD698 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PGN5857P43;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -3370,6 +3958,7 @@
 		1CB1AF7D2340D814004DD698 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PGN5857P43;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -3380,6 +3969,7 @@
 		1CB1AF7E2340D814004DD698 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PGN5857P43;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -3390,6 +3980,7 @@
 		1CB1AF882340DFFC004DD698 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PGN5857P43;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -3400,6 +3991,7 @@
 		1CB1AF892340DFFC004DD698 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PGN5857P43;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -3410,6 +4002,7 @@
 		1CB1AF932340E039004DD698 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PGN5857P43;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -3420,6 +4013,7 @@
 		1CB1AF942340E039004DD698 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PGN5857P43;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -3430,6 +4024,7 @@
 		1CB1AFA42340E1AA004DD698 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PGN5857P43;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -3440,6 +4035,7 @@
 		1CB1AFA52340E1AA004DD698 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PGN5857P43;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -3450,6 +4046,7 @@
 		1CC1B336234189DF00B2C18F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PGN5857P43;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -3460,6 +4057,7 @@
 		1CC1B337234189DF00B2C18F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PGN5857P43;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -3470,6 +4068,51 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1C15E84D234F545100FF3E00 /* Build configuration list for PBXNativeTarget "BlockImplementBlockForwarding" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C15E84B234F545100FF3E00 /* Debug */,
+				1C15E84C234F545100FF3E00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C3386B7234F27B900CC0EF3 /* Build configuration list for PBXNativeTarget "BlockImplementBlockPre" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C3386B5234F27B900CC0EF3 /* Debug */,
+				1C3386B6234F27B900CC0EF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C338970234DFDF100D54AE7 /* Build configuration list for PBXNativeTarget "BlockCapture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C338971234DFDF100D54AE7 /* Debug */,
+				1C338972234DFDF100D54AE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C33897B234E02D900D54AE7 /* Build configuration list for PBXNativeTarget "BlockTypedef" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C33897C234E02D900D54AE7 /* Debug */,
+				1C33897D234E02D900D54AE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C338986234E03B600D54AE7 /* Build configuration list for PBXNativeTarget "BlockImplement" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C338987234E03B600D54AE7 /* Debug */,
+				1C338988234E03B600D54AE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		1C35905E2342052100673F4D /* Build configuration list for PBXNativeTarget "BlockNotifications" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -3493,6 +4136,24 @@
 			buildConfigurations = (
 				1C3590742342099F00673F4D /* Debug */,
 				1C3590752342099F00673F4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C3DD6AB234ECAB3005F907B /* Build configuration list for PBXNativeTarget "BlockImplementStatic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C3DD6A9234ECAB3005F907B /* Debug */,
+				1C3DD6AA234ECAB3005F907B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C3DD6B4234ED3F3005F907B /* Build configuration list for PBXNativeTarget "BlockImplementBlock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C3DD6B5234ED3F3005F907B /* Debug */,
+				1C3DD6B6234ED3F3005F907B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
