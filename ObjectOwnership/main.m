@@ -13,7 +13,6 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
-        //创建一个数组用来包含多个BNREmployee对象
         NSMutableArray *employees = [[NSMutableArray alloc] init];
         
         for (int i = 0; i < 10; i++) {
@@ -36,7 +35,7 @@ int main(int argc, const char * argv[]) {
             
             //生成0到9之间的随机数,包含0和9
             NSUInteger randomIndex = random() % [employees count];
-            NSLog(@"randomIndex: %lu", (unsigned long)randomIndex);
+            NSLog(@"randomIndex: %lu， %d", (unsigned long)randomIndex, i * 10);
             //取出相应的BNREmployee对象
             BNREmployee *randomEmployee = [employees objectAtIndex:randomIndex];
             
@@ -56,7 +55,6 @@ int main(int argc, const char * argv[]) {
         employees = nil;
         //引发一连串释放动作
 
-        
     }
     return 0;
 }

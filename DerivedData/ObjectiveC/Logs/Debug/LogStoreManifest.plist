@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>84280869-C608-4156-8128-A3C92101D367</key>
+		<key>5D5D16FE-5FD9-4D8E-9518-4D2E8335EE81</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>84280869-C608-4156-8128-A3C92101D367.xcactivitylog</string>
+			<string>5D5D16FE-5FD9-4D8E-9518-4D2E8335EE81.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -26,19 +26,19 @@
 			<key>schemeIdentifier-containerName</key>
 			<string>ObjectiveC project</string>
 			<key>schemeIdentifier-schemeName</key>
-			<string>BlockImplementBlockForwarding</string>
+			<string>RGBX</string>
 			<key>schemeIdentifier-sharedScheme</key>
 			<integer>1</integer>
 			<key>signature</key>
-			<string>Debug BlockImplementBlockForwarding</string>
+			<string>Debug RGBX</string>
 			<key>timeStartedRecording</key>
-			<real>592401634.881549</real>
+			<real>597123674.58164501</real>
 			<key>timeStoppedRecording</key>
-			<real>592401636.02449501</real>
+			<real>597123677.33253896</real>
 			<key>title</key>
-			<string>Debug BlockImplementBlockForwarding</string>
+			<string>Debug RGBX</string>
 			<key>uniqueIdentifier</key>
-			<string>84280869-C608-4156-8128-A3C92101D367</string>
+			<string>5D5D16FE-5FD9-4D8E-9518-4D2E8335EE81</string>
 		</dict>
 	</dict>
 </dict>

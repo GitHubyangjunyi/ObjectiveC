@@ -12,8 +12,6 @@ int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
         NSDate *now = [NSDate date];
-        //消息发送,NSDate类中有一个date方法,接收方(指针,指向接收消息的对象的地址)是NSDate,选择器是date,date方法执行后NSDate类会在堆上给NSDate实例声明一部分内存,将NSDate实例初始化为当前时间并返回新对象的地址
-        NSLog(@"This NSDate object lives at %p", now);
         NSLog(@"This date is %@", now);
         
         double seconds = [now timeIntervalSince1970];
@@ -22,21 +20,18 @@ int main(int argc, const char * argv[]) {
         NSDate *later = [now dateByAddingTimeInterval: 100000];
         NSLog(@"In 100000 seconds it will be %@", later);
         
-        NSHost *host = [NSHost currentHost];//获取NSHost实例
-        NSLog(@"This NSHost object lives at %p", host);
+        NSHost *host = [NSHost currentHost];
         NSString *hoststring = [host localizedName];
         NSLog(@"This hoststring is %@", hoststring);
 
-        
         NSCalendar *cal = [NSCalendar currentCalendar];
-        NSLog(@"My calendar is %@", [cal calendarIdentifier]);//使用格里高利历法,也就是公历
-//        unsigned long day = [cal ordinalityOfUnit:<#(NSCalendarUnit)#> inUnit:<#(NSCalendarUnit)#> forDate:<#(nonnull NSDate *)#>];
+        NSLog(@"My calendar is %@", [cal calendarIdentifier]);//使用格里高利历法也就是公历
         unsigned long day = [cal ordinalityOfUnit:NSCalendarUnitDay
                                            inUnit:NSCalendarUnitMonth
                                           forDate:now];//计算now变量指向的NSDate实例的日期是相应月份中的第几日
         NSLog(@"This is day %lu of the month", day);
         
-        
+        //计算从我出生到现在间隔几秒
         NSDateComponents *comps = [[NSDateComponents alloc] init];
         [comps setYear: 1996];
         [comps setMonth: 11];
@@ -45,11 +40,33 @@ int main(int argc, const char * argv[]) {
         [comps setMinute: 2];
         [comps setSecond: 4];
         
-//        NSCalendar *g = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
-//        NSDate *dateOfBirth = [g dateFromComponents:comps];
-//
-//        double secondsSinceEarlierDate = [now timeIntervalSinceDate:comps];
-//        NSLog(@"%f", secondsSinceEarlierDate);
+        NSCalendar *g = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+        NSDate *dateOfBirth = [g dateFromComponents:comps];
+
+        double secondsSinceEarlierDate = [now timeIntervalSinceDate:dateOfBirth];
+        NSLog(@"%f", secondsSinceEarlierDate);
+        
+        
+        NSString *list = @"abc the xcv ght";
+        NSString *name = @"the";
+        NSString *nname = @"eh";
+        
+        NSRange match = [list rangeOfString: name];
+        if (!(match.location == NSNotFound)) {
+            NSLog(@"%lu", (unsigned long)match.location);
+            NSLog(@"%lu", (unsigned long)match.length);
+        }else{
+            NSLog(@"%lu", (unsigned long)match.location);
+            NSLog(@"%lu", (unsigned long)match.length);
+        }
+        match = [list rangeOfString: nname];
+        if (!(match.location == NSNotFound)) {
+            NSLog(@"%lu", (unsigned long)match.location);
+            NSLog(@"%lu", (unsigned long)match.length);
+        }else{
+            NSLog(@"Not Found");
+            NSLog(@"%lu", (unsigned long)match.length);
+        }
         
     }
     return 0;

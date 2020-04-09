@@ -37,12 +37,16 @@ int main(int argc, const char * argv[]) {
  //参考书目:
  //Objective-C编程 第二版 Aaron Hillegass/Mikey Ward 著 华中科技大学出版社
  //Objective-C高级编程 IOS与OS X多线程和内存管理 Kazuki Sakamoto/Tomohiko Furumoto 著 人民邮电出版社
+ //Objective-C编程全解 荻原刚志 著 人民邮电出版社
  //Objective-C编程之道 IOS设计模式解析 Carlo Chung 著 人民邮电出版社
 */
 
 //项目索引
 //000//AAAAReadMe
-//002//AllocInit            对象创建与初始化与id类型
+//AccessRights  访问权限
+    //001//RGB              无访问修饰
+    //002//RGBS             protect
+    //003//RGBX             private
 //014//Appliances           对象初始化过程
 //015//AppliancesX          继承关系间对象初始化过程
 //Blocks        Block对象
@@ -59,8 +63,11 @@ int main(int argc, const char * argv[]) {
     //001//BlockTypedef                     Block语法
     //031//VoweIMovement                    Block对象
 //028//Categories           范畴 为任何已有的类添加方法
-//003//ClassDefine          自定义类
-//008//ClassExtensions      类扩展/或者称为匿名范畴/隐藏可变属性/头文件与继承/头文件与生成的实例变量
+//002//ClassDefineProperties
+    //1//ClassDefine          自定义类使用实例变量
+    //2//ClassProperties      自定义类使用属性
+    //3//Properties           属性
+//005//ClassExtensions      类扩展/或者称为匿名范畴/隐藏可变属性/头文件与继承/头文件与生成的实例变量xxxxxxx上次到这xxxxxxx
 //Collection    集合类型
     //1//AtIndex            测试插入和删除行为
     //2//PropertyList       属性列表/XML
@@ -78,14 +85,12 @@ int main(int argc, const char * argv[]) {
     //019//TargetAction     目标-动作对/选择器工作机制/@selector编译指令
 //017//FileOperations       NSString/文件操作错误处理/UTF编码问题/特别目录
 //023//IMP                  类的继承层次/IMP类型 (有错误未修正)
-//005//Inheritance          继承关系
-//006//IsAPointer           isa指针/选择器的工作机制/@selector编译指令
+//003//Inheritance          继承关系
 //016//KVC                  KVC/Key路径/Core Data的关键
 //009//MemoryLeaks          强引用循环导致的内存泄漏
 //012//NS_ENUM              枚举宏和NSMutableArray
-//001//ObjectiveC           日期与时间
-//007//ObjectOwnership      对象所有权与ARC
-//004//Properties           属性
+//001//ObjectiveC           日期与时间/字符串匹配
+//004//ObjectOwnership      对象所有权与ARC
 //030//Protocols            协议
 //022//Runtime              Objective-C运行时/自省/动态查找并执行方法/注册的类数量
 //010//WeakReferences       父子对象之间的弱引用

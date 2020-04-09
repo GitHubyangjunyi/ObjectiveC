@@ -23,12 +23,8 @@ int main(int argc, const char * argv[]) {
         NSLog(@"Employee %u hired on %@", mikey.employeeID, mikey.hireDate);
         NSLog(@"Worked for %.2f years", [mikey yearsOfEmployment]);
         
-        
         NSDate *date = mikey.hireDate;
-        NSLog(@"%@ hired on %@", mikey, date);      //测试覆盖ddescription
-        
-        
-        
+        NSLog(@"%@ hired on %@", mikey, date);
         
     }
     return 0;
