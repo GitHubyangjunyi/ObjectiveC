@@ -17,7 +17,8 @@ NS_ASSUME_NONNULL_BEGIN
 }
 
 - (id)initWithRed: (int)r green: (int)g blue:(int)b;
-- (id)blendColor: (RGB *)color;
+- (id)blendColor: (RGBS *)color;
+- (id)blendColorX: (RGB *)color;
 - (void)print;
 
 @end

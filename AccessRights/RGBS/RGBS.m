@@ -36,19 +36,19 @@ static unsigned char roundUChar(int v)
 - (id)blendColor: (RGBS *)color
 {
     red = ((unsigned int)red + color->red) / 2;
-    green = ((unsigned int)green + color->green) / 2;   //因为类型一致，如果color是别的类(就算是父类)的对象则不能使用这种->方法直接访问color内部的实例变量并且color声明类型必须是静态类型
+    green = ((unsigned int)green + color->green) / 2;
     blue = ((unsigned int)blue + color->blue) / 2;
     return self;
 }
 
 //访问受限制
-//- (id)blendColorX: (RGB *)color
-//{
+- (id)blendColorX: (RGB *)color
+{
 //    red = ((unsigned int)red + color->red) / 2;
 //    green = ((unsigned int)green + color->green) / 2;
 //    blue = ((unsigned int)blue + color->blue) / 2;
-//    return self;
-//}
+    return self;
+}
 
 - (void)print
 {

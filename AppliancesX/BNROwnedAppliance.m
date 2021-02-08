@@ -50,8 +50,6 @@
 //BNROwnedAppliance *oa = [[BNROwnedAppliance alloc] init];
 //因为BNROwnedAppliance没有实现init,所以调用BNRAppliance的init方法,从而调用[self initWithProductName:@"UnknownName"]
 //又因为self指向的是BNROwnedAppliance实例,所以调用的是BNROwnedAppliance的initWithProductName:方法,该方法又调用[self initWithProductName:name firstOwnerName:nil]
-//又因为self指向的是BNROwnedAppliance实例,所以调用的是BNROwnedAppliance的initWithProductName:方法,该方法又调用[self initWithProductName:name firstOwnerName:nil]
-//又因为self指向的是BNROwnedAppliance实例,所以调用的是BNROwnedAppliance的initWithProductName:方法,该方法又调用[self initWithProductName:name firstOwnerName:nil]
 //调用顺序:BNROwnedAppliance *oa = [[BNROwnedAppliance alloc] init];
 //因为BNROwnedAppliance没有实现init
 //  所以调用父类BNRAppliance init---->

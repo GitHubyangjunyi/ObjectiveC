@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) NSDate *lastTime;
 
 -(NSString *)lastTimeString;
--(void)updateLastTime:(NSTimer *)t;                             //动作方法总是有一个实参,它是传入发送动作消息的那个对象,这里是NSTimer对象
+-(void)updateLastTime:(NSTimer *)t;
 
 -(void)zoneChange:(NSNotification *)note;
 

@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "BNRPerson.h"
+#import "BNRPersonI.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -67,6 +69,18 @@ int main(int argc, const char * argv[]) {
             NSLog(@"Not Found");
             NSLog(@"%lu", (unsigned long)match.length);
         }
+        
+        
+        BNRPerson *ps = [[BNRPerson alloc] init];
+        [ps setWeightInKilos:96];
+        [ps setHeightInMeters:11.8];
+        
+        BNRPersonI *p = [[BNRPersonI alloc] init];
+        [p setWeightInKilos:96];
+        [p setHeightInMeters:1.8];
+        NSLog(@"%f", [p value:ps]);
+        
+        
         
     }
     return 0;

@@ -12,8 +12,8 @@
 
 -(NSString *)lastTimeString
 {
-    static NSDateFormatter *dateFormatter = nil;                //如果有一千个BNRLogger实例,使用一样的方式格式化字符串,那么你希望所有的BNRLogger实例都能共享一个NSDateFormatter
-    if (!dateFormatter) {                                       //许多面向对象语言都使用类变量而不是实例变量来处理这种问题,Objective-C使用静态变量
+    static NSDateFormatter *dateFormatter = nil;
+    if (!dateFormatter) {
         dateFormatter =[[NSDateFormatter alloc] init];
         [dateFormatter setTimeStyle:NSDateFormatterMediumStyle];
         [dateFormatter setDateStyle:NSDateFormatterMediumStyle];
@@ -22,7 +22,7 @@
     return [dateFormatter stringFromDate:self.lastTime];
 }
 
--(void)updateLastTime:(NSTimer *)t                              //动作方法总是有一个实参,它是传入发送动作消息的那个对象,这里是NSTimer对象
+-(void)updateLastTime:(NSTimer *)t
 {
     NSDate *now = [NSDate date];
     [self setLastTime:now];

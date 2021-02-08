@@ -14,7 +14,7 @@ int main(int argc, const char * argv[]) {
         
         BNRLogger *logger = [[BNRLogger alloc] init];
         
-                                                                //将logger注册成为观察者使之在时区设置发生变化时收到通知
+        //将logger注册成为观察者使之在时区设置发生变化时收到通知
         [[NSNotificationCenter defaultCenter] addObserver:logger selector:@selector(zoneChange:) name:NSSystemTimeZoneDidChangeNotification object:nil];
         
         [[NSNotificationCenter defaultCenter] addObserverForName:NSSystemTimeZoneDidChangeNotification object:nil queue:nil usingBlock:^(NSNotification *nsnotifiction){NSLog(@"Block: The system time zone has changed!");} ];
@@ -27,12 +27,6 @@ int main(int argc, const char * argv[]) {
     return 0;
 }
 
-//运行程序然后更改系统时区,程序会收到通知
-//目前的回调规则如下
-//当要向一个对象发送一个回调时,苹果公司会使用目标-动作对
-//当要向一个对象发送多个回调时,苹果公司会使用符合相应协议的辅助对象,根据用途,辅助对象常称为委托或者数据源
-//
-//接下来的问题是如何处理要发送给多个对象的回调?
 //当用户修改了系统时区设置时,程序中的很多对象可能需要知道这一变化,这些对象都可以通过通知中心将自己注册成为观察者observer
 //当系统时区设置变化时会向通知中心发布NSSystemTimeZoneDidChangeNotification通知,然后通知中心会将该通知转发给相应的观察者
 //在向通知中心注册观察者时可以指定某个特定的通知名(如NSWindowDidResizeNotification)以及通知发布的来源(只接收到这个窗口调整大小的通知),这两个参数都可以设置为nil,如果都设置为nil那么就会接收到程序中所有对象发布的每条通知

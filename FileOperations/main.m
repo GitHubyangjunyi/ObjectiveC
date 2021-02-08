@@ -34,11 +34,9 @@ int main(int argc, const char * argv[]) {
         
         
         
-                                                                                                            //将NSData对象所保存的数据写入文件,NSData对象代表内存中某块缓冲区
+        NSError *urlerror = nil;                                                                          //将NSData对象所保存的数据写入文件,NSData对象代表内存中某块缓冲区
         NSURL *url = [NSURL URLWithString:@"https://i1.mifile.cn/f/i/19/zlc28v/index_interface_item3.jpg"]; //小米官网某张图片
         NSURLRequest *request = [NSURLRequest requestWithURL:url];
-        NSError *urlerror = nil;
-        
         NSData *data = [NSURLConnection sendSynchronousRequest:request returningResponse:NULL error:&urlerror];
                                                                                                             //以上这行代码会阻塞程序直到下载完全部数据
         
@@ -62,7 +60,7 @@ int main(int argc, const char * argv[]) {
         
                                                                                                             //特别目录
                                                                                                             //苹果公司创建了一个函数用来告诉正确的目录
-        NSArray *desktops = NSSearchPathForDirectoriesInDomains(NSDesktopDirectory, NSUserDomainMask, YES);
+        NSArray *desktops = NSSearchPathForDirectoriesInDomains(NSDesktopDirectory, NSUserDomainMask, YES);             //方法返回包含指定目录的数组
         NSString *desktopPath = desktops[0];
         NSLog(@"%@", desktopPath);
         

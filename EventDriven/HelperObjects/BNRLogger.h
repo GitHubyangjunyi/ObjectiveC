@@ -21,10 +21,9 @@ NS_ASSUME_NONNULL_BEGIN
 -(NSString *)lastTimeString;
 -(void)updateLastTime:(NSTimer *)t;
 
-                                                                                                //作为NSURLConnection的委托对象,BNRLogger需要响应三条消息,其中两条来自NSURLConnectionDataDelegate协议
+//作为NSURLConnection的委托对象,BNRLogger需要响应三条消息,其中两条来自NSURLConnectionDataDelegate协议
 -(void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data;                  //收到一定字节数的数据后会被调用
 -(void)connectionDidFinishLoading:(NSURLConnection *)connection;                                //最后一部分数据处理完毕后会被调用
-
 -(void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error;              //获取数据失败时会被调用(NSURLConnectionDelegate协议)
 
 @end

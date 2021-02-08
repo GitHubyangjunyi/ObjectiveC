@@ -16,7 +16,6 @@
 
 @property (nonatomic) unsigned int officeAlarmCode;
 
-
 @end
 
 @implementation BNREmployee
@@ -26,7 +25,7 @@
     if (self.hireDate) {
         NSDate *now = [NSDate date];
         NSTimeInterval secs = [now timeIntervalSinceDate: self.hireDate];
-        return  secs / 31557600.0;//每年的秒数
+        return secs / 31557600.0;//每年的秒数
     } else {
         return 0;
     }

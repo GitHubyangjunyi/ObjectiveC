@@ -12,7 +12,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface RGB : NSObject
 {
-    //@public
     unsigned char red, green, blue;
 }
 

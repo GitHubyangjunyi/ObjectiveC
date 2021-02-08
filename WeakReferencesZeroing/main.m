@@ -13,7 +13,6 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
-        //创建一个数组用来包含多个BNREmployee对象
         NSMutableArray *employees = [[NSMutableArray alloc] init];
         
         for (int i = 0; i < 10; i++) {
@@ -25,39 +24,33 @@ int main(int argc, const char * argv[]) {
             [employees addObject:mikey];
         }
         
-        //
         NSMutableArray *allAssets = [[NSMutableArray alloc] init];
-        //
-        
         
         //创建10个BNRAsset对象
-        for (int i = 0; i < 10; i++) {
+        for (int i = 1; i < 11; i++) {
             BNRAsset *asset = [[BNRAsset alloc] init];
             
             //为BNRAsset设置合适的标签
             NSString *currentLabel = [NSString stringWithFormat:@"Latop %d", i];
             asset.label = currentLabel;
-            asset.resaleValue = 350 + i * 10;
+            asset.resaleValue = i * 10;
             
             //生成0到9之间的随机数
             NSUInteger randomIndex = random() % [employees count];
-            NSLog(@"randomIndex: %lu", (unsigned long)randomIndex);
+            NSLog(@"randomIndex: %lu， %d", (unsigned long)randomIndex, i * 10);
             //取出相应的BNREmployee对象
             BNREmployee *randomEmployee = [employees objectAtIndex:randomIndex];
             
             //将BNRAsset对象赋给该BNREmployee对象
             [randomEmployee addAssets:asset];
             
-            
-            //
             [allAssets addObject:asset];
-            //
         }
         
         //这里插入数组排序
-//        NSSortDescriptor *voa = [NSSortDescriptor sortDescriptorWithKey:@"valueOfAssets" ascending:YES];//创建第一排序对象
-//        NSSortDescriptor *eid = [NSSortDescriptor sortDescriptorWithKey:@"employeeID" ascending:YES];//创建第二排序对象
-//        [employees sortUsingDescriptors:@[voa, eid]];
+        NSSortDescriptor *voa = [NSSortDescriptor sortDescriptorWithKey:@"valueOfAssets" ascending:YES];//创建第一排序对象
+        NSSortDescriptor *eid = [NSSortDescriptor sortDescriptorWithKey:@"employeeID" ascending:YES];//创建第二排序对象
+        [employees sortUsingDescriptors:@[voa, eid]];
         //该方法的实参是一个包含NSSortDescriptor对象的数组对象,排序描述对象包含两个信息,一是数组中对象的属性名,二是根据该属性选择升序还是降序
         
         
@@ -71,27 +64,18 @@ int main(int argc, const char * argv[]) {
         
         NSLog(@"Giving up ownership of one employee");
         [employees removeObjectAtIndex:5];
-        
-        
-        //
         NSLog(@"allAssets: %@", allAssets);
-        //
-        
         
         NSLog(@"Giving up ownership of arrays");
         
-        //
         allAssets = nil;
-        //
-        
+        sleep(5);
+        NSLog(@"sleep");
         employees = nil;
     }
     return 0;
 }
 
-//如果对象间是父子关系,那么为了避免强引用循环通常需要遵守此规则:
-//父对象拥有子对象,但是子对象不拥有父对象
-//
 //加入一个新的数组以说明弱引用
 //如果要让一个数组包含所有的BNRAsset对象(包括holder属性为空的对象),则可以在创建BNRAsset对象时将新创建的对象都加入这个数组对象
 //

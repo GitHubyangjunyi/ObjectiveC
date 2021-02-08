@@ -17,7 +17,6 @@ int main(int argc, const char * argv[]) {
         __unused NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:2.0 target:logger selector:@selector(updateLastTime:) userInfo:nil repeats:YES];
                                                                                                 //使用@selector语句传递动作消息的名称给相应方法,这就需要传递相应的实参而不能只传递方法的名字
         
-        
         [[NSRunLoop currentRunLoop] run];
         
         

@@ -17,11 +17,13 @@ int main(int argc, const char * argv[]) {
         const char *fmt = "val = %d\n";
         
         void (^blk) (void) = ^{printf(fmt, val);};//Block截获所使用的的自动变量的瞬时值
+        //Block截获所使用的的自动变量的瞬时值
         
+        //下面这些代码不影响上个Block
         val = 2;
         fmt = "These values were changed. val = %d\n";
         
-        blk();
+        blk();//输出val = 0
         
         
         
@@ -40,4 +42,4 @@ int main(int argc, const char * argv[]) {
     return 0;
 }
 
-//Block截获所使用的的自动变量的瞬时值
+

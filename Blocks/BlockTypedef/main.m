@@ -25,6 +25,15 @@ int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
         
+        double (^divBlock)(double, double);
+        
+        divBlock = ^(double dividend, double divisor){
+            double quotient = dividend / divisor;
+            return quotient;
+        };
+        NSLog(@"%f", divBlock(20, 5));
+        
+        
         NSLog(@"%d", func(10)(2));
         NSLog(@"%d", funcx()(2));
         

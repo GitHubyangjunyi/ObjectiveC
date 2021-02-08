@@ -10,6 +10,8 @@
 
 @implementation BNRAppliance
 
+@synthesize productName = pName;
+
 - (instancetype)init{
     return [self initWithProductName:@"UnknownName"];//覆盖父类的init方法并用定向至initWithProductName:方法以避免使用旧init方法是导致的问题
 }
@@ -17,7 +19,7 @@
 // MARK: 指定初始化方法
 -(instancetype) initWithProductName:(NSString *)name{
     if (self = [super init]) {
-        _productName = [name copy];
+        pName = [name copy];
         _voltage = 120;
     }
     return self;

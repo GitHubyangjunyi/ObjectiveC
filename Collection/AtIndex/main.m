@@ -11,26 +11,22 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
-        NSDate *now = [NSDate date];
-        NSDate *tomorrow = [now dateByAddingTimeInterval:24.0 * 60 * 60];
-        NSDate *yesterday = [now dateByAddingTimeInterval:-24.0 * 60 * 60];
+        //使用NSNumber包装C语言基本类型
+        NSMutableArray *list = [[NSMutableArray alloc] init];
+        [list addObject:@4];
         
-        NSMutableArray *dateList = [NSMutableArray array];
-        [dateList addObject: now];
-        [dateList addObject: tomorrow];
+        //使用NSValue封装结构体
+        NSPoint somePoint = NSMakePoint(100, 100);
+        NSValue *pointValue = [NSValue valueWithPoint:somePoint];
+        [list addObject:pointValue];
+        NSLog(@"%lu", (unsigned long)[list count]);
         
-        [dateList insertObject:yesterday atIndex:0];
         
-        for (NSDate *d in dateList) {
-            NSLog(@"%@\n", d);
-        }
+        //使用NSNull
+        [list addObject:[NSNull null]];
+        NSLog(@"%lu", (unsigned long)[list count]);
         
-        NSLog(@"%lu", (unsigned long)[dateList count]);
         
-        [dateList removeObjectAtIndex:0];
-        NSLog(@"%lu", (unsigned long)[dateList count]);
-        
-        NSLog(@"%@", dateList[0]);
     }
     return 0;
 }

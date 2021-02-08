@@ -21,6 +21,7 @@ int main(int argc, const char * argv[]) {
             mikey.weightInKilos = 90 + i;
             mikey.heightInMeters = 1.8 - i / 10.0;
             mikey.employeeID = i;
+            
             [employees addObject:mikey];
         }
         
@@ -31,15 +32,14 @@ int main(int argc, const char * argv[]) {
             //为BNRAsset设置合适的标签
             NSString *currentLabel = [NSString stringWithFormat:@"Latop %d", i];
             asset.label = currentLabel;
-            asset.resaleValue = 350 + i * 10;
+            asset.resaleValue = i * 10;
             
             //生成0到9之间的随机数
             NSUInteger randomIndex = random() % [employees count];
-            NSLog(@"randomIndex: %lu", (unsigned long)randomIndex);
-            //取出相应的BNREmployee对象
+            NSLog(@"randomIndex: %lu %d", (unsigned long)randomIndex, i * 10);
+            
             BNREmployee *randomEmployee = [employees objectAtIndex:randomIndex];
             
-            //将BNRAsset对象赋给该BNREmployee对象
             [randomEmployee addAssets:asset];
         }
         
